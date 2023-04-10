@@ -1,0 +1,184 @@
+/* Global CSS */
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+body {
+  font-family: Arial, Helvetica, serif;
+}
+
+.rotationImg {
+  width: 290px;
+  float: right;
+  border-radius: 3%;
+}
+
+
+.rotationImg {
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+
+}
+
+/* Permet de définir les étapes qui composent la séquence d'une animation CSS. */
+@keyframes spin {
+  100% {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+  font-size: 18px;
+  background: cadetblue;
+}
+
+label.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 0 100px;
+  line-height: 90px;
+}
+
+nav ul {
+  display: inline-flex;
+  margin-right: 40px;
+}
+
+nav li {
+  display: inline;
+  margin: 0 8px;
+}
+
+.stepswrap .steps {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cercle {
+  background-color: black;
+  color: white;
+  width: 100px;
+  line-height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 19px;
+  border: 4px solid gray;
+}
+
+
+.suivi {
+  font-size: 180px;
+  font-family: serif;
+  color: grey;
+}
+
+/*  espacement et alignement dans les cellules */
+table,
+th,
+td {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-collapse: collapse;
+  text-align: center;
+
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+
+th {
+  background-color: burlywood;
+  color: white;
+}
+
+tr:nth-child(even)
+
+/*paire*/
+  {
+  background-color: grey;
+}
+
+/* Quand on passe avec la souris change de couleur*/
+tr:hover {
+  background-color: rgb(156, 235, 235);
+
+}
+
+.number,
+input {
+  width: 65px;
+}
+
+/****** CSS Formulaire ******/
+
+input[type=text],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+fieldset {
+  background-color: #CCC;
+  max-width: 500px;
+  padding: 16px;
+}
+
+.footer {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: larger;
+  font-style: oblique;
+  border: 10px ridge black;
+  background-color: whitesmoke;
+  border-radius: 4%;
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Formation_CFA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lien CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>MyShopBoutique</title>
+</head>
+
+<body>
+
+    <!-- *************** NavBar ***************-->
+    <nav class="navbar">
+
+        <label class="accueil">Boutique en Ligne</label>
+
+        <ul>
+            <li><a class="active" href="#" onClick="afficher_article()">Home</a></li>
+        </ul>
+
+    </nav>
+    <!-- *************** NavBar ***************-->
+
+    <h1>MyShopBoutique</h1>
+    <div>
+        <p>
+            Bonjour et bienvenue sur la boutique en ligne, de vente de mobiles et ordinateurs.
+            <br/> <br/>
+            Faites votre choix et commander.
+        </p>
+        </div>
+
+    <div>
+        <img class="rotationImg" src="img/logo_fms.png" alt="logo-fms">
+    </div>
+
+    <br /> <br />
+
+    <section class="etape">
+        <div class="stepswrap">
+            <div class="steps">
+                <div class="cercle" onClick="afficher_liste()">All Items</div>
+                <div class="etape1" style=" display: none;"> <!-- Pour cacher le tableau-->
+                    <table>
+                        <tr>
+                            <td>SmartPhone</td>
+                        </tr>
+                        <tr>
+                            <td>Tablet</td>
+                        </tr>
+                        <tr>
+                            <td>PC</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="cercle" onClick="afficher_justificatif()">Stock Items</div>
+                <div class="etape2" style=" display: none;">
+                    <table>
+                        <tr>
+                            <td>Jusificatif Domicile</td>
+                        </tr>
+                        <tr>
+                            <td>RIB</td>
+                        </tr>
+                        <tr>
+                            <td>Attestation impôts</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="cercle" onClick="afficher_preuve()">Form Order</div>
+                <div class="etape3" style=" display: none;">
+                    <!-- *************** Formulaire ***************-->
+                    <form action="" id="loginForm">
+                        <fieldset>
+                            <legend>
+                                <h2>Veuillez passer commande</h2>
+                            </legend>
+                            <label for="nom">Nom </label>
+                            <input type="text" id="nom" name="nom" placeholder="Nom">
+
+                            <label for="adress">Adresse </label>
+                            <input type="text" id="adress" name="adress" placeholder="Adresse">
+
+                            <label for="tel">Téléphone </label>
+                            <input type="text" id="tel" name="tel" placeholder="Téléphone">
+
+                            <label for="email">E-mail </label>
+                            <input type="text" id="email" name="email" placeholder="E-mail">
+
+                            <input type="submit" value="Commander">
+                        </fieldset>
+                    </form>
+                    <!-- *************** Formulaire ***************-->
+
+                    <br /> <br />
+
+                   
+            </div>
+
+        </div>
+    </section>
+    <div class="footer">
+        <p>Guillaume</p>
+        <footer>&copy;FMS-EA Company 2023</footer>
+    </div>
+<!-- Lien JavaScript-->
+<script src="script.js"></script>
+</body>
+</html>

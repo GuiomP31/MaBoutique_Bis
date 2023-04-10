@@ -30,10 +30,10 @@
     <div>
         <p>
             Bonjour et bienvenue sur la boutique en ligne, de vente de mobiles et ordinateurs.
-            <br/> <br/>
+            <br /> <br />
             Faites votre choix et commander.
         </p>
-        </div>
+    </div>
 
     <div>
         <img class="rotationImg" src="img/logo_fms.png" alt="logo-fms">
@@ -62,14 +62,68 @@
                 <div class="cercle" onClick="afficher_justificatif()">Stock Items</div>
                 <div class="etape2" style=" display: none;">
                     <table>
+                        <!-- tr,définit une ligne de cellules dans un tableau. Une ligne peut être constituée d'éléments <td> (les données des cellules) et <th> (les cellules d'en-têtes). -->
                         <tr>
-                            <td>Jusificatif Domicile</td>
+                            <!-- th,définit une cellule d'un tableau comme une cellule d'en-tête pour un groupe de cellule. -->
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>BRAND</th>
+                            <th>PRICE</th>
+                            <th>QUANTITE</th>
                         </tr>
                         <tr>
-                            <td>RIB</td>
+                            <!-- td,définit une cellule d'un tableau qui contient des données -->
+                            <td>1</td>
+                            <td>S8</td>
+                            <td>SamSung</td>
+                            <td>200</td>
+                            <td><input type="number"></td>
                         </tr>
+
                         <tr>
-                            <td>Attestation impôts</td>
+                            <td>2</td>
+                            <td>S9</td>
+                            <td>SamSung</td>
+                            <td>250</td>
+                            <td><input type="number"></td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Iphone10</td>
+                            <td>Apple</td>
+                            <td>500</td>
+                            <td><input type="number"></td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>GalaxyTab</td>
+                            <td>SamSung</td>
+                            <td>400</td>
+                            <td><input type="number"></td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>EliteBook</td>
+                            <td>HP</td>
+                            <td>1000</td>
+                            <td><input type="number"></td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <!--<td>&nbsp;</td>-->
+                            <td>MacBook</td>
+                            <td>Apple</td>
+                            <td>1500</td>
+                            <td><input class="number" type="number"></td>
+
+                        </tr>
+
+                        <tr>
+                            <th colspan="5"><input type="submit" value="Commander" onclick="afficher_commande();"></th>
                         </tr>
                     </table>
                 </div>
@@ -101,16 +155,17 @@
 
                     <br /> <br />
 
-                   
-            </div>
 
-        </div>
+                </div>
+
+            </div>
     </section>
     <div class="footer">
         <p>Guillaume</p>
         <footer>&copy;FMS-EA Company 2023</footer>
     </div>
-<!-- Lien JavaScript-->
-<script src="script.js"></script>
+    <!-- Lien JavaScript-->
+    <script src="script.js"></script>
 </body>
+
 </html>
